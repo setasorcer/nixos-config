@@ -11,6 +11,7 @@
     imagemagick
     gnumake
     libgcc
+    qmk
     
     pamixer
     pulsemixer
