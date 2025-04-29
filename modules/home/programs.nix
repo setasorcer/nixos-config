@@ -12,6 +12,7 @@
     gnumake
     libgcc
     qmk
+    doas-sudo-shim
     
     pamixer
     pulsemixer
