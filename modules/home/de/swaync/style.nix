@@ -51,9 +51,10 @@ with config.lib.stylix.colors;
   /* The actual notification */
   border-radius: 0.475rem;
   /*border: 1px solid @noti-border-color;*/
+  border: 1px solid @base01;
   padding: 0;
   transition: background 0.15s ease-in-out;
-  background: @base00;
+  background: @base01;
 }
 
 .notification-row .notification-background .notification.low {
@@ -167,14 +168,14 @@ with config.lib.stylix.colors;
   color: @text-color;
   caret-color: @text-color;
   border: 1px solid @noti-border-color;
-  border-radius: 1rem;
+  border-radius: 0.475rem;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button {
   margin-left: 4px;
   background: @noti-bg;
   border: 1px solid @noti-border-color;
-  border-radius: 1rem;
+  border-radius: 0.475rem;
   color: @text-color;
 }
 

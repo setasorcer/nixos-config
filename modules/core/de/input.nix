@@ -8,7 +8,7 @@
       ids = [ "*" ];
       settings.main = {
         capslock = "overload(control,esc)";
-	esc = "capslock";
+	#esc = "capslock";
 	pause = "esc";
 	sysrq = "overload(meta,sysrq)";
       };
