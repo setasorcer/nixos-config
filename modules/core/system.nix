@@ -1,4 +1,4 @@
-{ ... }:
+{ username, ... }:
 
 {
   # Allow unfree packages
@@ -7,6 +7,8 @@
     settings = {
       experimental-features = [ "nix-command" "flakes" ];
       auto-optimise-store = true;
+      # Add me as a trusted user!
+      trusted-users = [ username ];
     };
     gc = {
       automatic = true;
