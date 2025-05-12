@@ -22,10 +22,10 @@
   services.tlp = {
     enable = true;
     settings = {
-      START_CHARGE_TRESH_BAT0 = 70;
+      START_CHARGE_TRESH_BAT0 = 55;
       STOP_CHARGE_TRESH_BAT0 = 80;
 
-      START_CHARGE_TRESH_BAT1 = 70;
+      START_CHARGE_TRESH_BAT1 = 55;
       STOP_CHARGE_TRESH_BAT1 = 80;
 
       CPU_SCALING_GOVERNOR_ON_AC = "performance";
@@ -34,6 +34,19 @@
     };
   };
 
+  # Keyd
+  services.keyd = {
+    enable = true;
+    keyboards.default = {
+      ids = [ "*" ];
+      settings.main = {
+        capslock = "overload(control,esc)";
+	esc = "capslock";
+	pause = "esc";
+	sysrq = "overload(meta,sysrq)";
+      };
+    };
+  };
   # Laptop optimizations: battery modules, disable hyprland decorations
   games.steam.enabled = true;
   home-manager.users."${username}" = {
@@ -43,7 +56,6 @@
     };
     home.packages = with pkgs; [
       anki-bin
-      #hydrus
     ];
   };
   virtualization.enabled = true;

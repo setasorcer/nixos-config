@@ -12,6 +12,9 @@
       "shift+DOWN" = "seek -10";
       "[" = "add speed -0.1";
       "]" = "add speed 0.1";
+      "alt+H" =  "script-binding mpvacious-sub-seek-back";
+      "alt+L" =  "script-binding mpvacious-sub-seek-forward";
+      "L" = "cycle-values loop-file inf no";
     };
     extraInput = ''
       Alt+RIGHT no-osd cycle-values video-rotate "90" "180" "270" "0"

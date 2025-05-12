@@ -1,19 +1,6 @@
 { pkgs, username, ... }:
 
 {
-  # Keyd
-  services.keyd = {
-    enable = true;
-    keyboards.default = {
-      ids = [ "*" ];
-      settings.main = {
-        capslock = "overload(control,esc)";
-	#esc = "capslock";
-	pause = "esc";
-	sysrq = "overload(meta,sysrq)";
-      };
-    };
-  };
   # Fcitx5
   i18n.inputMethod = {
     enable = true;

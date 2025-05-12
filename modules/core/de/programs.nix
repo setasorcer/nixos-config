@@ -8,7 +8,16 @@
       withOpenASAR = true;
       withVencord = true; # can do this here too
     })
+    gst_all_1.gstreamer
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-plugins-good
+    gst_all_1.gst-plugins-bad
+    gst_all_1.gst-plugins-ugly
+    gst_all_1.gst-libav
   ];
+  environment.variables = {
+    GST_PLUGIN_PATH = "/run/current-system/sw/lib/gstreamer-1.0/";
+  };
 
   programs = {
     # Enable fish here for autocompletion

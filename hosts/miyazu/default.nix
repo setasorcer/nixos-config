@@ -24,7 +24,9 @@
 
   environment.systemPackages = with pkgs; [
     prismlauncher
-    #davinci-resolve
+    davinci-resolve
+    gimp3-with-plugins
+    tenacity
   ];
   games.steam.enabled = true;
   games.hoyo.enabled = true;
