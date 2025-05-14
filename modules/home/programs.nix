@@ -19,7 +19,6 @@
     playerctl
 
     qbittorrent
-    via
   ];
   programs.zathura.enable = true;
   programs.foot = {

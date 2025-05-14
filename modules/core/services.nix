@@ -5,6 +5,7 @@
     # Bluetooth
     bluetooth = {
       enable = true;
+      # Fixes DS3 Controller bluetooth
       /*input = {
         General = {
 	  ClassicBondedOnly = "false";
@@ -24,14 +25,9 @@
     # Mullvad
     mullvad-vpn.enable = true;
 
-    # USB automount?
+    # USB automount
     devmon.enable = true;
     gvfs.enable = true;
     udisks2.enable = true;
-    # Udev
-    udev.packages = with pkgs; [
-      # Fixes via
-      via
-    ];
   };
 }
