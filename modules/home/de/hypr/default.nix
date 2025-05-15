@@ -41,7 +41,6 @@
         "swww-daemon & sleep 0.2 && swww img ${config.stylix.image}" # Wallpaper
 	"waybar" # Bar
 	"avizo-service" # OSD
-	"hyprctl keyword \"device[synaptics-tm3276-022]:enabled\" false"
       ];
 
       general = {
