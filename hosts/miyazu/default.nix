@@ -30,5 +30,6 @@
   ];
   games.steam.enabled = true;
   games.hoyo.enabled = true;
+  services.flatpak.enable = true;
   virtualization.enabled = true;
 }

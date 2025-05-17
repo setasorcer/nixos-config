@@ -45,6 +45,9 @@
 	pause = "esc";
 	sysrq = "overload(meta,sysrq)";
       };
+      settings.global = {
+        overload_tap_timeout = 175;
+      };
     };
   };
   # Laptop optimizations: battery modules, disable hyprland decorations

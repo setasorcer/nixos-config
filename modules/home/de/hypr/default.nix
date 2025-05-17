@@ -96,8 +96,8 @@
 	swallow_regex = [ "^($term)$" ];
 	swallow_exception_regex = [ "^(wev)$" "^(dragon)$" ];
 	vrr = 1; # VRR to save battery
-	mouse_move_enables_dpms = true; 
-	key_press_enables_dpms = false;
+	mouse_move_enables_dpms = false; 
+	key_press_enables_dpms = true;
       };
     };
   };
@@ -108,6 +108,7 @@
     floorp.profileNames = [ "default" ];
     foot.enable = true;
     gtk.enable = true;
+    gtk.flatpakSupport.enable = true;
     #hyprland.enable = true;
     neovim.enable = true;
     neovim.transparentBackground.main = true;
