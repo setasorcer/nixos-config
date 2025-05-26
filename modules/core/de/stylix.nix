@@ -11,27 +11,24 @@
       gtk.enable = true;
       plymouth.enable = true;
     };
-    # maigo theme by anokyo
-    # Inspired by gruvbox, precious-light, and everforest
+    # Mountain colour scheme by gnsfujiwara
     base16Scheme = {
-      base00 = "151516";
-      base01 = "202020";
-      base02 = "303030";
-      base03 = "505050";
-      base04 = "B0B0B0";
-      base05 = "D0D0D0";
-      base06 = "E0E0E0";
-      base07 = "F5F5F5";
-      base08 = "AC4142";
-      base09 = "D28445";
-      base0A = "F4BF75";
-      base0B = "90A959";
-      base0C = "75B5AA";
-      base0D = "6A9FB5";
-      base0E = "AA759F";
-      base0F = "8F5536";
-      scheme = "maigo";
-      author = "anokyo";
+      base00 = "0f0f0f";
+      base01 = "191919";
+      base02 = "262626";
+      base03 = "4c4c4c";
+      base04 = "ac8a8c";
+      base05 = "cacaca";
+      base06 = "e7e7e7";
+      base07 = "f0f0f0";
+      base08 = "ac8a8c";
+      base09 = "ceb188";
+      base0A = "aca98a";
+      base0B = "8aac8b";
+      base0C = "8aabac";
+      base0D = "8f8aac";
+      base0E = "ac8aac";
+      base0F = "ac8a8c";
     };
     image = ./../../../papes/pape.jpg;
     polarity = "dark";

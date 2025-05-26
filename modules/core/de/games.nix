@@ -30,7 +30,7 @@ in
     programs = {
       # Hoyo games
       anime-game-launcher.enable = cfghoyo.enabled;
-      honkers-railway-launcher.enable = cfghoyo.enabled;
+      #honkers-railway-launcher.enable = cfghoyo.enabled;
       # Steam
       steam = lib.mkIf cfgsteam.enabled {
         enable = true;
