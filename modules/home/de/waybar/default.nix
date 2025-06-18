@@ -103,6 +103,17 @@
           on-click = "playerctl play-pause";
 	  tooltip = false;
 	};
+	cava = {
+	  cava_config = "${config.home.homeDirectory}/.config/cava/config";
+	  format-icons = [ "▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
+	  method = "pipewire";
+	  bars = 18;
+	  autosens = 1;
+	  source = "auto";
+	  bar_delimiter = 0;
+	  input_delay = 2;
+	  hide_on_silence = true;
+	};
 	cpu = {
 	  interval = 10;
     	  format = " {}%";

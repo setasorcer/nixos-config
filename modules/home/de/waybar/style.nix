@@ -74,6 +74,7 @@ with config.lib.stylix.colors;
 
     /* RIGHT MODULE */
     #custom-media,
+    #cava,
     #memory,
     #cpu,
     #temperature,
