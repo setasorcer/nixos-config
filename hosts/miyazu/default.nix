@@ -27,9 +27,9 @@
     davinci-resolve
     gimp3-with-plugins
     tenacity
+    obs-studio
   ];
   games.steam.enabled = true;
   games.hoyo.enabled = true;
-  services.flatpak.enable = true;
   virtualization.enabled = true;
 }
