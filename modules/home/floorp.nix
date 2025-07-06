@@ -28,6 +28,7 @@
       containersForce = true;
       settings = {
         "media.hardware-video-decoding.force-enabled" = true;
+	"dom.security.https_only_mode_send_http_background_request" = false;
       };
     };
   };
