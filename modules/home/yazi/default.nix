@@ -30,7 +30,7 @@ in
     enable = true;
     initLua = ./init.lua;
     settings = {
-      manager = {
+      mgr = {
         show_symlink = false;
       };
       plugin = {
@@ -59,7 +59,7 @@ in
       };
     };
     keymap = {
-      manager.prepend_keymap = [
+      mgr.prepend_keymap = [
 	# Exit to shell
 	{ run = '' shell "$SHELL" --block ''; on = [ "!" ]; desc = "Open shell here"; }
 	# Alternative movement (personal preference coming from lf)

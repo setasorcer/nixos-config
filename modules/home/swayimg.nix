@@ -24,6 +24,8 @@
     sigusr1 = reload
     # Action performed by SIGUSR2 signal (same format as for key bindings)
     sigusr2 = next_file
+    # Integrate with Wayland compositor (Sway/Hyprland only)
+    compositor = no
     # Application ID and window class name
     app_id = swayimg
     
