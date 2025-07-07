@@ -11,4 +11,6 @@
       persist = true;
     }];
   };
+  # Enable HM hyprlock to perform authentication
+  security.pam.services.hyprlock = {};
 }

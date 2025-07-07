@@ -5,6 +5,7 @@
     ./binds.nix
     ./decoration.nix
     ./idle.nix
+    ./lock.nix
   ];
   # Extra packages for desktop environment
   home.packages = with pkgs; [
