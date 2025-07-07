@@ -104,6 +104,7 @@
   };
   stylix.targets = {
     avizo.enable = true;
+    btop.enable = true;
     fcitx5.enable = true;
     floorp.enable = true;
     floorp.profileNames = [ "default" ];
