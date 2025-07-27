@@ -23,8 +23,13 @@
 
     settings = {
       monitor = [
-        ", highrr, auto, 1, cm, auto"
+        "eDP-1, highrr, auto, 1.5, cm, auto"
+        "DP-2, highrr, auto, 1, cm, auto"
       ];
+
+      xwayland = {
+        force_zero_scaling = true;
+      };
 
       # Default programs
       "$term" = "foot";
@@ -67,6 +72,10 @@
 	focus_on_close = 1; # Focus window under cursor when window is closed (can be none)
 	mouse_refocus = false;
 	accel_profile = "adaptive";
+	# Natural scrolling
+	touchpad = {
+	  natural_scroll = true;
+	};
       };
 
       # Rules

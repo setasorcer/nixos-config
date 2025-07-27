@@ -55,7 +55,7 @@
     enable = true;
     settings = {
       default = {
-        time = 1.0;
+        time = 1.5;
         fade-in = 0.1;
         fade-out = 0.2;
 	border-width = 0;

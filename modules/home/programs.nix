@@ -19,6 +19,8 @@
     playerctl
 
     qbittorrent
+    vesktop
+    easyeffects
   ];
   programs.zathura.enable = true;
   programs.foot = {

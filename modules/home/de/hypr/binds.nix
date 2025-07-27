@@ -74,6 +74,7 @@ in
 
     bindel = [
       ",XF86Favorites, exec, chayang -d 2 && hyprctl dispatch dpms off"
+      ",XF86AudioMedia, exec, chayang -d 2 && hyprctl dispatch dpms off"
       "SHIFT, F12, exec, chayang -d 2 && hyprctl dispatch dpms off"
       ",XF86WakeUp, exec, dpms on"
       "CTRL, F12, exec, dpms on"
@@ -95,6 +96,11 @@ in
 
       ",XF86MonBrightnessUp, exec, lightctl up"
       ",XF86MonBrightnessDown, exec, ${lowbright-fix}"
+    ];
+
+    bindl = [
+      ",switch:on:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, disable'"
+      ",switch:off:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, highrr, auto, 1.5, cm, auto'"
     ];
   };
 }

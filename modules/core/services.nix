@@ -15,19 +15,21 @@
   };
 
   # Install services
-  environment.systemPackages = with pkgs; [
-    mullvad-vpn
-  ];
-
   services = {
     # Blueman
     blueman.enable = true;
     # Mullvad
-    mullvad-vpn.enable = true;
+    mullvad-vpn = {
+      enable = false;
+      package = pkgs.mullvad-vpn;
+    };
 
     # USB automount
     devmon.enable = true;
     gvfs.enable = true;
     udisks2.enable = true;
+
+    # Don't do anything when the lid is closed
+    logind.lidSwitch = "ignore";
   };
 }
