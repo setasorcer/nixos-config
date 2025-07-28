@@ -23,7 +23,7 @@
 
     settings = {
       monitor = [
-        "eDP-1, highrr, auto, 1.5, cm, auto"
+        "eDP-1, highrr, auto, 1.5, cm, auto, vrr, 1"
         "DP-2, highrr, auto, 1, cm, auto"
       ];
 
@@ -75,7 +75,12 @@
 	# Natural scrolling
 	touchpad = {
 	  natural_scroll = true;
+	  clickfinger_behavior = true;
 	};
+      };
+
+      gestures = {
+        workspace_swipe = true;
       };
 
       # Rules

@@ -1,18 +1,5 @@
 { pkgs, config, ... }:
 
-let
-  lowbright-fix = pkgs.writeShellScript "lightctl-mod.sh" ''
-    bright=$(${pkgs.light}/bin/light -G)
-
-    if (( $(echo "$bright < 6" | bc -l) )); then
-      lightctl set 1
-    elif (( $(echo "$bright < 2" | bc -l) )); then
-      lightctl set 5
-    else
-      lightctl down
-    fi
-  '';
-in
 {
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
@@ -73,11 +60,11 @@ in
     ];
 
     bindel = [
-      ",XF86Favorites, exec, chayang -d 2 && hyprctl dispatch dpms off"
-      ",XF86AudioMedia, exec, chayang -d 2 && hyprctl dispatch dpms off"
-      "SHIFT, F12, exec, chayang -d 2 && hyprctl dispatch dpms off"
+      ",XF86Favorites, exec, chayang -d 2 && hyprctl dispatch dpms off" # T480 F12
+      ",XF86AudioMedia, exec, chayang -d 2 && hyprctl dispatch dpms off" # FW13 F12
+      "SHIFT, F12, exec, chayang -d 2 && hyprctl dispatch dpms off" # Universal F12
       ",XF86WakeUp, exec, dpms on"
-      "CTRL, F12, exec, dpms on"
+      "CTRL, F12, exec, dpms on" # If above doesn't work
 
       # Use mpc instead because playerctl is buggy
       ",XF86AudioPlay, exec, mpc toggle"
@@ -95,11 +82,14 @@ in
       ",XF86AudioMicMute, exec, volumectl -m toggle-mute"
 
       ",XF86MonBrightnessUp, exec, lightctl up"
-      ",XF86MonBrightnessDown, exec, ${lowbright-fix}"
+      ",XF86MonBrightnessDown, exec, lightctl down"
     ];
 
+    # Used for when docking a laptop.
+    # BUG: If closing the lid before plugging in dock, a workspace will not transfer to the new monitor.
+    # Temporary fix is to physically open and close the lid. Workspaces will then appear.
     bindl = [
-      ",switch:on:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, disable'"
+      ",switch:on:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, disable'; loginctl lock-session"
       ",switch:off:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, highrr, auto, 1.5, cm, auto'"
     ];
   };
