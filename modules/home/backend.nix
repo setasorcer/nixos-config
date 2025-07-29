@@ -37,7 +37,7 @@
 
   # Adwaita icon theme
   gtk.enable = true;
-  stylix.iconTheme = {
+  stylix.icons = {
     enable = true;
     package = lib.mkForce pkgs.adwaita-icon-theme;
     light = "adwaita";

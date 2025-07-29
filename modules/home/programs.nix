@@ -18,26 +18,29 @@
     pulsemixer
     playerctl
 
+    xwayland-satellite
     qbittorrent
     vesktop
     easyeffects
   ];
-  programs.zathura.enable = true;
-  programs.foot = {
-    enable = true;
-    settings = {
-      main = {
-        pad = "24x24";
-      };
-      colors = {
-        background = lib.mkForce "${config.stylix.base16Scheme.base01}";
+  programs = {
+    zathura.enable = true;
+    foot = {
+      enable = true;
+      settings = {
+        main = {
+          pad = "24x24";
+        };
+        colors = {
+          background = lib.mkForce "${config.stylix.base16Scheme.base01}";
+        };
       };
     };
-  };
-  programs.btop = {
-    enable = true;
-    settings = {
-      vim_keys = true;
+    btop = {
+      enable = true;
+      settings = {
+        vim_keys = true;
+      };
     };
   };
 

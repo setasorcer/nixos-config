@@ -1,7 +1,10 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, config, lib, inputs, ... }:
 
 {
-  imports = [ ./style.nix ];
+  imports = [
+    ./style.nix
+  ];
+
   # Extra goodies
   home.packages = with pkgs; [
     rofi-power-menu # Power menu

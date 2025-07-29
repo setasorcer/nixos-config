@@ -3,6 +3,7 @@
 {
   # Bootloader.
   boot = {
+    kernelPackages = pkgs.linuxPackages_latest;
     initrd.systemd.enable = true;
     loader = {
       timeout = 0;
@@ -36,4 +37,8 @@
     targets.network-online.wantedBy = pkgs.lib.mkForce []; # Normally ["multi-user.target"]
     services.NetworkManager-wait-online.wantedBy = pkgs.lib.mkForce []; # Normally ["network-online.target"]
   };
+  swapDevices = [{
+      device = "/var/lib/swapfile";
+      size = 24 * 1024;
+  }];
 }

@@ -11,6 +11,7 @@
     fish.enable = true;
     # Fuck nano
     nano.enable = false;
+    niri.enable = true;
     nix-ld = {
       enable = true;
       libraries = [(pkgs.runCommand "steamrun-lib" {}
