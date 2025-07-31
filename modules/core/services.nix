@@ -27,7 +27,10 @@
     # USB automount
     devmon.enable = true;
     gvfs.enable = true;
-    udisks2.enable = true;
+    udisks2 = {
+      enable = true;
+      mountOnMedia = true;
+    };
 
     # Don't do anything when the lid is closed
     logind.lidSwitch = "ignore";

@@ -8,11 +8,12 @@
     bc # calculator
     ncdu # Disk space checker
     git
-    imagemagick
     gnumake
     libgcc
+    imagemagick
     qmk
     doas-sudo-shim
+    ryzenadj
     
     pamixer
     pulsemixer
@@ -21,7 +22,6 @@
     xwayland-satellite
     qbittorrent
     vesktop
-    easyeffects
   ];
   programs = {
     zathura.enable = true;

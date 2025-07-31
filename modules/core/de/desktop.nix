@@ -3,7 +3,7 @@
 {
   # Greetd with tuigreet
   services.greetd = {
-    enable = true;
+    enable = false;
     settings = {
       default_session = {
         command = "${pkgs.greetd.tuigreet}/bin/tuigreet -r --asterisks --remember-session --window-padding 2";
@@ -11,11 +11,9 @@
       };
     };
   };
-
-  # Hyprland
-  programs.hyprland = {
+  services.displayManager.gdm = {
     enable = true;
-    withUWSM = true;
+    wayland = true;
   };
 
   # Fonts

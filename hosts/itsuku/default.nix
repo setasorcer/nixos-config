@@ -23,7 +23,11 @@
  
   # Power saving
   networking.networkmanager.wifi.powersave = true;
+
+  # Framework-specific
   services.fwupd.enable = true;
+  hardware.framework.laptop13.audioEnhancement.enable = true;
+  hardware.framework.laptop13.audioEnhancement.rawDeviceName = "alsa_card.pci-0000_c1_00.6";
 
   # Keyd
   services.keyd = {

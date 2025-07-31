@@ -16,7 +16,7 @@
     chayang # screen dimming
   ];
   wayland.windowManager.hyprland = {
-    enable = true;
+    enable = false;
     # Disable because of UWSM
     systemd.enable = false;
     xwayland.enable = true;

@@ -13,7 +13,7 @@
     };
     plymouth = {
       enable = true;
-    #  theme = "rings";
+    #  theme = "BGRT";
     #  themePackages = with pkgs; [
     #    (adi1090x-plymouth-themes.override {
     #      selected_themes = [ "rings" ];

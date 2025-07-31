@@ -30,8 +30,11 @@ let
   '';
 in
 {
-  programs.ncmpcpp = {
+  programs.inori = {
     enable = true;
+  };
+  programs.ncmpcpp = {
+    enable = false;
     bindings = [
       { key = "j"; command = "scroll_down"; }
       { key = "k"; command = "scroll_up"; }
