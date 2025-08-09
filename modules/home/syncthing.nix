@@ -54,7 +54,8 @@
           "${config.home.homeDirectory}/dox/send" = {
 	    id = "d8mzi-18znf";
 	    label = "shared";
-            devices = [ "miyazu" "droid" ];
+            #devices = [ "miyazu" "droid" ];
+            devices = [ "droid" ];
           };
           /*"${config.home.homeDirectory}/music" = {
 	    id = "bj6oi-ijmtg";
@@ -87,5 +88,5 @@
 	  };
 	};
       };
-  };
+  #};
 }
