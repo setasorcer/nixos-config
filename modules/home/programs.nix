@@ -2,26 +2,32 @@
 
 {
   home.packages = with pkgs; [
-    # Sys mon
+    # System apps/generic
+    doas-sudo-shim
     btop
-    nvtopPackages.amd
     bc # calculator
     ncdu # Disk space checker
+
+    # Suites/complex programs
+    imagemagick
+    qbittorrent
+    yt-dlp
+    ffmpeg
+
+    # Compilation/coding
     git
     gnumake
     libgcc
-    imagemagick
     qmk
-    doas-sudo-shim
+
+    # Gaming tools
     ryzenadj
+    nvtopPackages.amd
+    vesktop
     
+    # Sound/music tools
     pamixer
     pulsemixer
-    playerctl
-
-    xwayland-satellite
-    qbittorrent
-    vesktop
   ];
   programs = {
     zathura.enable = true;
@@ -43,13 +49,4 @@
       };
     };
   };
-
-  /*programs.imv = {
-    enable = true;
-    settings = {
-      binds = {
-        "<Ctrl+w>" = "exec swww clear-cache; exec swww img --transition-type grow --transition-fps 165 --transition-step 30 $imv_current_file";
-      };
-    };
-  };*/
 }

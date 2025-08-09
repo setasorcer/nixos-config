@@ -2,7 +2,7 @@
 
 let
   dataDir = "/mnt";
-  usbDir = "/run/mount";
+  usbDir = "/media";
   nixDir = "~/.config/nixos";
   musicDir = "~/music/rsgain";
   snapsDir = "~/pix/snaps";

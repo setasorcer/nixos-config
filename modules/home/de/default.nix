@@ -1,6 +1,7 @@
 {
   imports = [
     ./hypr
+    ./niri
 
     ./notifs
     ./search

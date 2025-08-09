@@ -4,7 +4,7 @@
     ./backend.nix
 
     ./programs.nix
-    ./mpd
+    ./music
     ./yazi
     ./nvim.nix
     ./pass.nix

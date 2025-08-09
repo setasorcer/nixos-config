@@ -32,9 +32,12 @@ in
 {
   programs.inori = {
     enable = true;
+    settings = {
+      qwerty_keybindings = true;
+    };
   };
   programs.ncmpcpp = {
-    enable = false;
+    enable = true;
     bindings = [
       { key = "j"; command = "scroll_down"; }
       { key = "k"; command = "scroll_up"; }

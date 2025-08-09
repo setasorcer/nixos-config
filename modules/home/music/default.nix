@@ -1,14 +1,16 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [ ./ncmpcpp.nix ];
+  #imports = [ ./ncmpcpp.nix ];
   # Utilities for music
   home.packages = with pkgs; [
     mpc # mpd CLI
-    rsgain # ReplayGain
+    playerctl # mpris CLI
+    rsgain # ReplayGain tool
     kid3-qt # Metatag editor
     nicotine-plus # Hehehe
-    ffmpeg
+    plattenalbum # GTK interface for mpd
+    jamesdsp # EQ
   ];
   services = {
     mpd = {

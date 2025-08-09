@@ -26,8 +26,7 @@
 
   # Framework-specific
   services.fwupd.enable = true;
-  hardware.framework.laptop13.audioEnhancement.enable = true;
-  hardware.framework.laptop13.audioEnhancement.rawDeviceName = "alsa_card.pci-0000_c1_00.6";
+  #hardware.framework.laptop13.audioEnhancement.enable = true;
 
   # Keyd
   services.keyd = {
